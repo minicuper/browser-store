@@ -18,7 +18,7 @@ function BrowserStore() {
 
 BrowserStore.prototype.getItem = function (key) {
   return promisify(() => {
-    return store.get()
+    return store.get(key)
   })
 }
 
